@@ -1,4 +1,5 @@
 import LogoutBtn from "../../../components/logout-btn";
+import Sidebar from "../../../components/sidebar";
 import { strapi } from "../../../lib/strapi";
 
 
@@ -17,6 +18,7 @@ export default async function Home() {
   return (
     <div>
       <h1>Sahibinden Clone</h1>
+      <Sidebar />
       <LogoutBtn />
       <ul>
         {data.map((item) => (
